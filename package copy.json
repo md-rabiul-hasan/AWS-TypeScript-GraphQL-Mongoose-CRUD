@@ -1,0 +1,34 @@
+{
+  "name": "aws-typescript-service",
+  "version": "1.0.0",
+  "description": "My Serverless service",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && sls offline start",
+    "deploy": "npm run build && sls deploy"
+  },
+  "keywords": [
+    "serverless",
+    "graphql",
+    "typescript",
+    "apollo",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^3.4.0",
+    "express": "^4.17.1",
+    "graphql": "^16.3.0",
+    "serverless-http": "^2.0.2",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.8",
+    "serverless": "^3.3.0",
+    "serverless-offline": "^8.2.2",
+    "serverless-plugin-typescript": "^2.4.0"
+  }
+}

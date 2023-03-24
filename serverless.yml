@@ -1,0 +1,16 @@
+service: aws-typescript-graphql
+provider:
+  name: aws
+  runtime: nodejs14.x
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+functions:
+  graphql:
+    handler: dist/server.handler
+    timeout: 10
+    events:
+      - http:
+          path: /graphql
+          method: any
+          cors: true
