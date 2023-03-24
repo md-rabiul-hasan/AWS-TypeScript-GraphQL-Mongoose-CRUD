@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && sls offline start",
-    "deploy": "npm run build && sls deploy"
+    "deploy": "npm run build && sls deploy",
+    "offline": "tsc-watch -p tsconfig.build.json --onSuccess \"serverless offline\""
   },
   "keywords": [],
   "author": "",

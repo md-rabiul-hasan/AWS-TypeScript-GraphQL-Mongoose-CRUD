@@ -22,12 +22,29 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
-import { Document } from 'mongoose';
-export interface ITodo extends Document {
+export const __esModule: boolean;
+export default Todo;
+declare const Todo: mongoose_1.Model<{
     title: string;
     description: string;
-}
-declare const Todo: import("mongoose").Model<ITodo, {}, {}, {}, Document<unknown, {}, ITodo> & Omit<ITodo & {
-    _id: import("mongoose").Types.ObjectId;
-}, never>, any>;
-export default Todo;
+}, {}, {}, {}, mongoose_1.Document<unknown, {}, {
+    title: string;
+    description: string;
+}> & Omit<{
+    title: string;
+    description: string;
+} & {
+    _id: mongoose_1.Types.ObjectId;
+}, never>, mongoose_1.Schema<any, mongoose_1.Model<any, any, any, any, any, any>, {}, {}, {}, {}, mongoose_1.DefaultSchemaOptions, {
+    title: string;
+    description: string;
+}, mongoose_1.Document<unknown, {}, mongoose_1.FlatRecord<{
+    title: string;
+    description: string;
+}>> & Omit<mongoose_1.FlatRecord<{
+    title: string;
+    description: string;
+}> & {
+    _id: mongoose_1.Types.ObjectId;
+}, never>>>;
+import mongoose_1 = require("mongoose");
